@@ -3,11 +3,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import React, { useState, useEffect } from 'react';
 import { WelcomeScreen } from './components/WelcomeScreen';
 import { QuizScreen } from './components/QuizScreen';
 import { ResultsScreen } from './components/ResultsScreen';
 import { ProgressScreen } from './components/ProgressScreen';
 import { questions as allQuestions } from './data/questions';
+import { QuizState, Mode, Question } from './types';
+import { BarChart2, Moon, Sun } from 'lucide-react';
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
