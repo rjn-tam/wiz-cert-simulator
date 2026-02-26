@@ -3,11 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { WelcomeScreen } from './WelcomeScreen';
-import { QuizScreen } from './QuizScreen';
-import { ResultsScreen } from './ResultsScreen';
-import { ProgressScreen } from './ProgressScreen';
-import { questions as allQuestions } from './questions';
+import { WelcomeScreen } from './components/WelcomeScreen';
+import { QuizScreen } from './components/QuizScreen';
+import { ResultsScreen } from './components/ResultsScreen';
+import { ProgressScreen } from './components/ProgressScreen';
+import { questions as allQuestions } from './data/questions';
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
